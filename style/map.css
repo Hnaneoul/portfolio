@@ -1,0 +1,44 @@
+*{font-family: 'Noto Sans KR', sans-serif;}
+main {width:calc(100% - 240px); margin:0 auto;  }
+main h1{}
+main .jang {display: flex;  margin-top:50px; padding-bottom: 50px;
+    border-bottom:1px solid #999;
+    flex-flow: row nowrap; justify-content: space-between; }
+main .jang .jang_txt {margin-left:46px;}
+main .jang .jang_txt h1 {
+    font-size: 2.65rem;
+    font-weight: 700;}
+main .jang .jang_txt ul {}
+main .jang .jang_txt ul li:first-child {margin-top:60px;}
+main .jang .jang_txt ul li {margin-bottom: 25px;}
+main .jang .jang_txt ul li:last-child {margin-bottom: 0;}
+main .jang .jang_txt ul li p {}
+main .jang .jang_txt .jang_map {
+    display: flex; flex-flow: row nowrap; align-items: center;
+    margin-top:36px; 
+}
+main .jang .jang_txt .jang_map a {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    border-radius: 1rem;
+    background: #f2f2f2;
+    padding: 15px 15px;
+    }
+main .jang .jang_txt .jang_map a:hover {background: #fff; color:#000; }
+main .jang .jang_txt .jang_map a p {margin-left:5px;}
+main .jang .jang_txt .jang_map a img {}
+main .jang .jang_txt .jang_map > p {
+    padding: 1rem 0.75rem; background: #f2f2f2; padding: 25px 15px; 
+    border-radius: 1rem; margin-left:21px;
+}
+main .jang .jang_img {}
+main .jang .jang_img img{}
+
+
+#map {
+    width:700px; height: 500px; margin:50px auto; padding:50px 0 50px; 
+}
+main > h1 {font-weight: 600; font-size: 1.5rem; margin-top:70px; text-align: center;}
+main .home  {line-height: 20px; text-align: center; font-size: 1.3rem; font-weight: 500; margin-top:15px;}
+main .sun {margin:50px 0 100px; border-bottom: 1px solid #999; display: block; }

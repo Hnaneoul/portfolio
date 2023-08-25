@@ -1,0 +1,139 @@
+*{font-family: 'Noto Sans KR', sans-serif;}
+/*  css */
+body  {}
+/* nav */
+body  #nav { width:calc(100% - 240px); margin:0 auto;
+    display: flex; align-items: center; 
+    
+}
+body  #nav .span {}
+body  #nav .span .b_menu{}
+body  #nav .span a{
+    display: block; position: relative;}
+/* 햄버거 눌렀을시 메뉴판 */
+#nav .span {transition: all 0.2s;
+    background: url(../image/burger.png) no-repeat; width:40px; height: 40px;
+}
+#nav .span.active{
+    transition: all 0.2s;
+    background: url(../image/deletebutton.png) no-repeat; 
+    image-rendering:none;
+}
+
+
+/* 햄버거눌렀을때 서브메뉴 */
+ #nav .span > button{background: none; margin-top: 20px; padding-bottom:20px; }
+.b_menu{display:none;}
+.showHide {display:block }
+
+body  #nav .span .b_menu { 
+    transition: all 3s; transform: translateY(1.5);
+    background: #fff; position: absolute; 
+    z-index: 555; padding-top:10px;/* <- 임시 */
+    border:1px solid #000; 
+}
+
+body  #nav .span .b_menu ul {display: flex; }
+body  #nav .span .b_menu ul li {margin:36px 0 36px;}
+body  #nav .span .b_menu ul li h2 {font-weight: 700; margin-bottom: 20px;}
+body  #nav .span .b_menu ul li > div a {font-size: 0.8rem; margin-bottom: 13px;}
+body  #nav .span .b_menu ul li:first-child {
+    margin-left:20px; border-right: 1px solid #aaa; padding:0 30px 0 30px;
+}
+body  #nav .span .b_menu ul li:nth-of-type(2) {
+    padding:0 87px 0 40px; border-right: 1px solid #aaa;
+}
+body  #nav .span .b_menu ul li:nth-of-type(3) {
+    padding:0 87px 0 53px; border-right: 1px solid #aaa;
+}
+body  #nav .span .b_menu ul li:nth-of-type(4) {
+    padding:0 100px 0 53px; border-right: 1px solid #aaa;
+}
+body  #nav .span .b_menu ul li:nth-of-type(5) {
+    padding:0 164px 0 40px;
+}
+body  #nav .span .b_menu ul li .b1 {}
+body  #nav .span .b_menu ul li .b1 h2 {}
+body  #nav .span .b_menu ul li .b1 h2 a {}
+body  #nav .span .b_menu ul li .b1 a img {}
+body  #nav .span .b_menu ul li .b2 {}
+body  #nav .span .b_menu ul li .b2 h2 {margin-top:30px;}
+body  #nav .span .b_menu ul li .b2 h2 a {}
+body  #nav .span .b_menu ul li .b2 a img {}
+body  #nav .span .b_menu ul li .b3 {}
+body  #nav .span .b_menu ul li .b3 h2 {}
+body  #nav .span .b_menu ul li .b3 h2 a {}
+body  #nav .span .b_menu ul li .b4 {margin-top:70px;}
+body  #nav .span .b_menu ul li .b4 h2 {}
+body  #nav .span .b_menu ul li .b4 a {}
+body  #nav .span .b_menu ul li .b5 {}
+body  #nav .span .b_menu ul li .b5 h2 {}
+body  #nav .span .b_menu ul li .b5 h2 a {}
+body  #nav .span .b_menu ul li .b5 a img {}
+body  #nav .span .b_menu ul li .b6 {margin-top:70px;}
+body  #nav .span .b_menu ul li .b6 h2 {}
+body  #nav .span .b_menu ul li .b6 h2 a {}
+body  #nav .span .b_menu ul li .b6 {}
+body  #nav .span .b_menu ul li .b6 h2 {}
+body  #nav .span .b_menu ul li .b6 a {}
+body  #nav .span .b_menu ul li .b7 {}
+body  #nav .span .b_menu ul li .b7 h2 {}
+body  #nav .span .b_menu ul li .b7 h2 a {}
+body  #nav .span .b_menu ul li .b7 a img {}
+body  #nav .span .b_menu ul li .b8 {margin-top:70px;}
+body  #nav .span .b_menu ul li .b8 h2 {}
+body  #nav .span .b_menu ul li .b8 h2 a {}
+body  #nav .span .b_menu ul li .b8 {}
+body  #nav .span .b_menu ul li .b8 h2 {}
+body  #nav .span .b_menu ul li .b8 a {}
+body  #nav .span .b_menu ul li .b9 {}
+body  #nav .span .b_menu ul li .b9 h2 {}
+body  #nav .span .b_menu ul li .b9 h2 a {}
+body  #nav .span .b_menu ul li .b9 {}
+body  #nav .span .b_menu ul li .b9 h2 {}
+body  #nav .span .b_menu ul li .b9 a {}
+
+/* nav 메뉴 */
+body  #nav .menu { 
+    position: relative;
+    display: flex;  
+    margin:0 auto;
+}
+body  #nav .menu > li:hover{
+    animation:ani 3s linear alternate infinite; z-index: 2; }
+@keyframes ani {
+    0%{transform:translateY(0)}
+    50%{transform:translateY(-5px)}
+    100%{transform:translateY(0)}
+}
+body  #nav .menu > li {padding:35px;}
+body  #nav .menu > li  { }
+body  #nav .menu > li > a {}
+
+body  #nav .menu > li > a:after {}
+/* 서브 */
+body  #nav .menu li:nth-of-type(5){}
+body  #nav .menu li:nth-of-type(5):hover{ 
+    
+    }
+body  #nav .menu li:nth-of-type(5) .e_sub{  
+    padding:15px 0 15px; width:900px;  left:35%;
+    position: absolute; z-index: 2; 
+    background:#fff; 
+    display: flex; flex-flow: row nowrap; margin-top:30px;
+    border:1px solid #000; 
+}
+body  #nav .menu li:nth-of-type(5) .e_sub .e_sub_left { 
+    margin:0 87px 0 24px;
+    display: flex; flex-flow:  column nowrap;}
+body  #nav .menu li:nth-of-type(5) .e_sub .e_sub_left{}
+body  #nav .menu li:nth-of-type(5) .e_sub .e_sub_left {}
+body  #nav .menu li:nth-of-type(5) .e_sub .e_sub_left h1 {margin-bottom: 15px;}
+body  #nav .menu li:nth-of-type(5) .e_sub .e_sub_left h1 a {
+    font-size: 1.8rem; }
+body  #nav .menu li:nth-of-type(5) .e_sub .e_sub_left a {}
+body  #nav .menu li:nth-of-type(5) .e_sub .e_sub_right {display: flex; }
+body  #nav .menu li:nth-of-type(5) .e_sub .e_sub_right img {margin-right: 25px;}
+body  #nav .menu li:nth-of-type(5) .e_sub .e_sub_right img:last-child {margin-right: 40px;}
+body  #nav .menu li a {margin-bottom: 15px;}
+body  #nav .menu li:last-child {margin-right:0;}

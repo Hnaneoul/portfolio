@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANGWURI MAP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/map.css">
+    <link rel="stylesheet" href="./style/commons.css">
+</head>
+<body>
+    <?php include('./header.php') ?>
+    <main>
+        <div class="jang">
+            <div class="jang_txt">
+                <h1>BANGWURI</h1>
+                <ul>
+                    <li>
+                        <p>매장주소 ㅣ  경기도 부천시 조마루로 411,2층(원미동)</p>
+                    </li>
+                    <li>
+                        <p>영업시간 ㅣ 09:30 - 18:00</p>
+                    </li>
+                    <li>
+                        <p>점심시간 ㅣ  13:00 -  14:00</p>
+                    </li>
+                    <li>
+                        <p>메일 ㅣ bangwuri0109@naver.com</p>
+                    </li>
+                </ul>
+                <div class="jang_map">
+                    <a href="http://kko.to/PihtAWx69_"><img src="./image/map.png" alt="지도"><p>매장보기</p></a>
+                    <p>매장문의  070-4694-5206</p>
+                </div>
+            </div>
+            <div class="jang_img"><img src="./image/jang.jpg" alt="매장"></div>
+        </div>
+        <h1>저희 매장으로 오시는길</h1>
+        <p class="home">경기도 부천시 조마루로 411,2층(원미동)</p>
+        <div id="map"><!--지도 삽입 위치 --></div>
+        <span class="sun"></span>
+    </main>
+    <?php include('./footer.php') ?>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=c43428b93a57454a1c7e2103a7728c82"></script>
+    <script>
+        var markerPosition  = new kakao.maps.LatLng(37.49931248,126.79023431);
+        const container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
+        let options = { //지도를 생성할 때 필요한 기본 옵션
+	        center: new kakao.maps.LatLng(37.49931248,126.79023431), //지도의 중심좌표.
+	        level: 3 //지도의 레벨(확대, 축소 정도)
+        };
+        let map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+        var marker = new kakao.maps.Marker({
+            position: markerPosition
+        });
+        marker.setMap(map);
+    </script>
+    <script src="./script/script.js"></script>
+</body>
+</html>

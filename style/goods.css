@@ -1,0 +1,114 @@
+*{font-family: 'Noto Sans KR', sans-serif;}
+
+main {width:calc(100% - 300px); margin:0 auto;}
+/* HOME>상의>블라우스/셔츠 */
+main .location {
+    z-index: 2; 
+    float: right; margin:26px 120px 0 0 ; font-size: 0.8rem; color: #999;}
+main .location a {font-size: 0.8rem; color: #999;}
+/* 굿즈시작 */
+main .goods {
+    display: flex; padding-top:130px;
+    width:calc(100% - 300px); 
+    margin:0 auto; 
+}
+/* 굿즈 왼쪽 이미지 */
+main .goods .goods_left {}
+main .goods .goods_left img {}
+/* 굿즈 오른쪽 정보들 */
+main .goods .goods_right {margin-left:150px;}
+/* 제품이름 */
+main .goods .goods_right .goods_name {display: flex; width:101%;}
+main .goods .goods_right .goods_name h1{
+    font-size: 1.2rem;
+    font-weight: 500;}
+main .goods .goods_right .goods_name p{margin-left:50px;}
+/* 구옛날가격 */
+main .goods .goods_right .y_money{margin:35px 0 6px; }
+main .goods .goods_right .y_money strike{
+    color: #999;
+    font-size: 0.9rem;
+    font-weight: 500}
+/* 현재 가격 */
+main .goods .goods_right .tb_left{}
+main .goods .goods_right .tb_left .money{
+    color:#F99090;
+    font-size: 2rem;
+    font-weight: 500;}
+main .goods .goods_right .tb_left .money span{
+    margin-left:3px; color:#000; font-weight: 500;}
+/* 적립금/배송/원산지 */
+main .goods .goods_right .goods_information{width:120%;
+    margin-top:44px; padding-bottom: 54px; border-bottom: 1px solid #999;
+}
+main .goods .goods_right .goods_information li{
+    display: flex; flex-flow: row nowrap; }
+main .goods .goods_right .goods_information li:nth-of-type(1) p {font-weight: 700;}
+main .goods .goods_right .goods_information li:nth-of-type(1) p span {font-size:0.8rem;}
+main .goods .goods_right .goods_information li:nth-of-type(2){
+    margin:28px 0 28px;}
+main .goods .goods_right .goods_information li h2{font-weight: 500;}
+main .goods .goods_right .goods_information li p{margin-left:30px; font-weight: 500;}
+main .goods .goods_right .goods_information li:nth-last-of-type(2) p{margin-left:45px;}
+main .goods .goods_right .goods_information li p span{}
+
+/* 옵션/색상/사이즈 */
+main .goods .goods_right > dl {padding:15px 0 15px; display: flex; align-items: center; border-bottom: 1px dashed #999; width:107%;} 
+main .goods .goods_right > dl > dt {font-size: 0.9rem;}
+main .goods .goods_right > dl > dd {margin-left:150px; }
+main .goods .goods_right > dl > dd > select {width:300px; padding-left:7px;}
+main .goods .goods_right > dl > dd > select > option {}
+
+main .goods .goods_right .goods_menu1{padding:20px 0 15px;}
+main .goods .goods_right .goods_menu1 dt {}
+main .goods .goods_right .goods_menu1 dt dd {}
+main .goods .goods_right .goods_menu1 dt dd .menu_1{}
+main .goods .goods_right .goods_menu1 dt dd .menu_1 option{}
+main .goods .goods_right .goods_menu2{}
+main .goods .goods_right .goods_menu2 dt {}
+main .goods .goods_right .goods_menu2 dt dd {}
+main .goods .goods_right .goods_menu2 dt dd .menu_2{}
+main .goods .goods_right .goods_menu2 dt dd .menu_2 option{}
+main .goods .goods_right .goods_menu3{border:none;}
+main .goods .goods_right .goods_menu3 dt {}
+main .goods .goods_right .goods_menu3 dd {}
+main .goods .goods_right .goods_menu3 dd select{margin-left:-13.5px;}
+main .goods .goods_right .goods_menu3 dd .menu_3 option{}
+
+/* 총 상품금액 */
+main .goods .goods_right .amount {
+    display: flex; padding:34px 0 39px; border-top: 1px solid #999;
+    width:120%;
+}
+main .goods .goods_right .amount h2 {
+    font-size: 1.1rem;
+    font-weight: 500;}
+main .goods .goods_right .amount p {
+    margin-left:296px;  
+    font-size: 1.5rem;
+    font-weight: 700;}
+main .goods .goods_right .amount p span {margin-left:3px;}
+
+/* 찜, 장바구니, 바로구매 */
+main .goods .goods_right .prd-btns {display: flex; width:120%; margin-bottom: 34px;}
+main .goods .goods_right .prd-btns #widhBtn  {}
+main .goods .goods_right .prd-btns #widhBtn img {padding:15px; border:1px solid #999;}
+main .goods .goods_right .prd-btns #cartBtn {padding:24px 61.5px;  border:1px solid #999; margin:0 13px 0 13px;}
+main .goods .goods_right .prd-btns #buyBtn {
+    padding:24px 61.5px; background-color: #353535; color:#fff;}
+
+/* 네이버결제 */
+main .goods .goods_right .naver_buy {
+    display: flex; padding:17px 0 17px;  width:120%;
+    border-top: 1px solid #999; border-bottom: 1px solid #999;
+}
+main .goods .goods_right .naver_buy img {width:80px;}
+main .goods .goods_right .naver_buy a {padding:8px 115px 6px; border: 1px solid #999; margin:0 12px 0 12px;}
+main .goods .goods_right .naver_buy a:nth-of-type(2) {padding:11px; border: 1px solid #999;}
+main .goods .goods_right .naver_buy a img {}
+
+/* 네이버혜택 */
+main .goods .goods_right .naver_event {display: flex; margin:16px 0 100px;}
+main .goods .goods_right .naver_event span {color:#30D05E;}
+main .goods .goods_right .naver_event p {margin-left:15px;}
+
