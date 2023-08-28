@@ -10,6 +10,8 @@ const swiper = new Swiper('.swiper', {
     },
     autoplay:{delay:2000,
     disableOnInteraction: false,},
+    slidesPerView : 1,
+    centeredSlides: true,
     loop:true,
     loopAdditionalSlides : 1,
 });

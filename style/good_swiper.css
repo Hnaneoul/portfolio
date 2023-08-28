@@ -1,5 +1,6 @@
 .goods_swiper{width: 1500px; margin:0 auto; }
-.g_sc{margin:0 0 20px -1080px; text-align: center;} 
+.goods_swiper >p {font-size: 1.3rem;}
+.g_sc{margin:0 0 20px -1050px; text-align: center;} 
 #product_slide {height: 300px; 
 	text-align: center;  width:1300px; 
 }

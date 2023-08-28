@@ -237,7 +237,18 @@ main .best_item p {
 main .item-cont {width:calc(100% - 240px);  margin:0 auto;
     display: flex; flex-flow: row wrap; justify-content: space-between;
 }
-main .item-cont .item-list {}
+main .item-cont .item-list {position: relative;}
+main .item-cont .item-list dt a {}
+main .item-cont .item-list dt > .back {
+    position: absolute; bottom: 292px; text-align: center; left:0;
+    width:380px; height: 40px; z-index: 500; 
+    background: rgba(153, 153, 153, 0.50);
+    display: flex; flex-flow: row nowrap; align-items: center; justify-content: right;
+}
+main .item-cont .item-list dt > .back > a > img{margin-right:10px; width:25px; height: 25px;}
+main .item-cont .item-list dt a > .back > p {}
+
+
 main .item-cont .item-list a {}
 main .item-cont .item-list dt {}
 main .item-cont .item-list dt img {}
