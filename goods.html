@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S-1192 카버 여성스러운 카라 블라우스</title>
+    <!-- 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- 스와이퍼 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- 파비콘 -->
     <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
     <link rel="icon" href="./image/favicon.ico" type="image/x-icon">
@@ -15,6 +19,7 @@
     <link rel="stylesheet" href="./style/commons.css">
     <link rel="stylesheet" href="./style/nav.css">
     <link rel="stylesheet" href="./style/goods.css">
+    <link rel="stylesheet" href="./style/good_swiper.css">
 </head>
 <body>
     <?php include('./header.php') ?>
@@ -104,10 +109,72 @@
                 </div>
             </div>
         </div>
+        <!-- 스와이퍼 -->
+        <div class="goods_swiper">
+            <p class="g_sc">오늘의 추천상품</p>
+            <div class="swiper" id="product_slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <a href="#"><img src="./image/goods_slide1.gif" alt=""></a>
+                        <p class="g_s_f">SX-2207 여성스러운 <br>스트라이프 블라우스</p>
+                        <span class="g_s_s"><strike>₩55,500</strike></span>
+                        <span class="g_s_m">₩ 26,000</span>
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <a href="#"><img src="./image/goods_slide2.gif" alt=""></a>
+                        <p class="g_s_f">SX-2207 여성스러운 <br>스트라이프 블라우스</p>
+                        <span class="g_s_s"><strike>₩55,500</strike></span>
+                        <span class="g_s_m">₩ 26,000</span>
+                    </div>
+                    <div class="swiper-slide slide3">
+                        <a href="#"><img src="./image/goods_slide3.gif" alt=""></a>
+                        <p class="g_s_f">SX-2207 여성스러운 <br>스트라이프 블라우스</p>
+                        <span class="g_s_s"><strike>₩55,500</strike></span>
+                        <span class="g_s_m">₩ 26,000</span>
+                    </div>
+                    <div class="swiper-slide slide4">
+                        <a href="#"><img src="./image/goods_slide4.gif" alt=""></a>
+                        <p class="g_s_f">SX-2207 여성스러운 <br>스트라이프 블라우스</p>
+                        <span class="g_s_s"><strike>₩55,500</strike></span>
+                        <span class="g_s_m">₩ 26,000</span>
+                    </div>
+                    <div class="swiper-slide slide5">
+                        <a href="#"><img src="./image/goods_slide5.gif" alt=""></a>
+                        <p class="g_s_f">SX-2207 여성스러운 <br>스트라이프 블라우스</p>
+                        <span class="g_s_s"><strike>₩55,500</strike></span>
+                        <span class="g_s_m">₩ 26,000</span>
+                    </div>
+                    <div class="swiper-slide slide6">
+                        <a href="#"><img src="./image/goods_slide2.gif" alt=""></a>
+                        <p class="g_s_f">SX-2207 여성스러운 <br>스트라이프 블라우스</p>
+                        <span class="g_s_s"><strike>₩55,500</strike></span>
+                        <span class="g_s_m">₩ 26,000</span>
+                    </div>
+                    <div class="swiper-slide slide7">
+                        <a href="#"><img src="./image/goods_slide3.gif" alt=""></a>
+                        <p class="g_s_f">SX-2207 여성스러운 <br>스트라이프 블라우스</p>
+                        <span class="g_s_s"><strike>₩55,500</strike></span>
+                        <span class="g_s_m">₩ 26,000</span>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+                <div class="swiper-button-prev"></div><!-- 이전 버튼 -->
+                <div class="swiper-scrollbar"></div>
+        </div>
+        <span class="jul"></span>
+        <div class="elucidate">
+            <h1>카버 여성스러운 카라 블라우스</h1>
+            <img src="./image/elucidate_img1.png" alt="">
+            <p>♥MD COMMENT</p>
+            <span>간편하게 툭, 자꾸만 손이 가는 아이템!<br>
+            여성스러우면서도 캐쥬얼하게<br>
+            코디하기 좋은 아이템이에요,<br>
+            다양한 하의와 쉬운 매치로 데일리하게♥</span>
+        </div>
     </main>
     <?php include('./footer.php') ?>
     <!-- <script src="./script/nav3.js"></script> -->
     <!-- <script src="./script/script.js"></script> -->
-    
+    <script src="./script/goods.custum.js"></script>
 </body>
 </html>
